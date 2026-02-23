@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SIS Exam Browser</string>
+    <string name="label_session_token">Session token</string>
+    <string name="action_start_exam">Mulai ujian</string>
+    <string name="action_scan_qr">Scan QR token</string>
+    <string name="action_open_settings">Pengaturan</string>
+    <string name="label_base_url">Base URL ujian</string>
+    <string name="action_save">Simpan</string>
+</resources>
