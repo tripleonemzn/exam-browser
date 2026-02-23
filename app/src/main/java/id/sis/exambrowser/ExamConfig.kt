@@ -7,7 +7,7 @@ object ExamConfig {
 
     private const val PREF_NAME = "exam_config"
     private const val KEY_BASE_URL = "base_exam_url"
-    private const val DEFAULT_BASE_URL = "https://sis.sekolah.id/exam/live"
+    private const val DEFAULT_BASE_URL = ""
 
     private fun prefs(context: Context) =
         context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE)
@@ -33,4 +33,3 @@ object ExamConfig {
         return Uri.parse(base).host.orEmpty()
     }
 }
-

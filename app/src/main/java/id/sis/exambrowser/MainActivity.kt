@@ -29,16 +29,13 @@ class MainActivity : ComponentActivity() {
         binding.settingsButton.setOnClickListener {
             openSettings()
         }
+    }
 
-        binding.scanQrButton.setOnClickListener {
-            startQrScanner()
-        }
-
-        binding.startExamButton.setOnClickListener {
-            val token = binding.sessionTokenInput.text?.toString()?.trim().orEmpty()
-            if (token.isNotEmpty()) {
-                openExam(token)
-            }
+    override fun onResume() {
+        super.onResume()
+        val baseUrl = ExamConfig.getBaseUrl(this)
+        if (baseUrl.isNotBlank()) {
+            openExam("")
         }
     }
 
